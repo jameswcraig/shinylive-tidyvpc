@@ -17,3 +17,7 @@ shinylive::export(appdir = "vpc", destdir = "docs")
 ```r
 httpuv::runStaticServer("docs", port = 8888)
 ```
+
+## Issues
+
+Matrix >= 1.6-5 is required by `tidyvpc`. There currently appears to be an [issue](https://github.com/r-universe/r-forge/actions/runs/7343545542/job/20020102993) building this version of the `Matrix` package for WASM.
